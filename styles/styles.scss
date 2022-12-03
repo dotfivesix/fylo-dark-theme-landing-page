@@ -10,9 +10,10 @@
     box-sizing: border-box;
 }
 
-:root
+@mixin animate
 {
-    font-size: 14px;
+    transition-duration: $t-duration;
+    transition-timing-function: $t-timing;
 }
 
 @import "variables";

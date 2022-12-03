@@ -1,0 +1,77 @@
+.header
+{
+    height: 6em;
+    display: flex;
+    align-items: center;
+    padding: 2em 1.25em;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $max-res;
+    margin: 0 auto;
+
+    &__logo_container
+    {
+        display: flex;
+    }
+
+    &__logo
+    {
+        width: 5em;
+        cursor: pointer;
+    }
+
+    &__links
+    {
+        display: flex;
+        list-style: none;
+        display: flex;
+        gap: 1em;
+    }
+    &__link > a
+    {
+        color: $light-gray;
+        text-decoration: none;
+        font-weight: 400;
+        font-family: $font-primary;
+        font-size: 1em;
+        position: relative;
+
+        &::before
+        {
+            content: '';
+            width: 0%;
+            position: absolute;
+            height: 3px;
+            background-color: cyan;
+            bottom: -.5em;
+            @include animate;
+        }
+        
+        &:hover::before
+        {
+            width: 100%;
+        }
+        &:hover
+        {
+            color: white;
+        }
+    }
+}
+
+@media screen and (min-width: $md-bp)
+{
+    .header
+    {
+        font-size: 22px;
+        padding: 2em 3em;
+    }
+
+}
+
+@media screen and (min-width: $lg-bp)
+{
+    .header
+    {
+        font-size: 25px;
+    }
+}
