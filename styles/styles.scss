@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    font-size: 14px;
+}
+
+@import "variables";
+@import "testimonials";
+@import "team";
+@import "hero";
+@import "header";
+@import "form";
+@import "footer";
+@import "features";
