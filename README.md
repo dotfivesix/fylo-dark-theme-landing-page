@@ -8,7 +8,7 @@
 
 - **SCSS** for styling
 
-- **Javascript** for Toggle
+- **Javascript** for form validation
 
 ## Links
 
