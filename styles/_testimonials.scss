@@ -1,0 +1,88 @@
+.testimonials
+{
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+
+    &__wrapper
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+        &::before
+        {
+            content: '';
+            position: absolute;
+            background-image: url("../images/bg-quotes.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width:3rem;
+            height: 3rem;
+            top: -3rem;
+            left: 0;
+        }
+    }
+}
+
+.testimonial
+{
+    position: relative;
+    z-index: 2;
+    background-color: $testimonials-bg;
+    padding: 1.5em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    max-width: 25em;
+
+    &__quote
+    {
+        color: $light-gray;
+        line-height: 1.75;
+    }
+    &__profile
+    {
+        display: flex;
+        gap: 1em;
+        &_ctx
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &_pic
+        {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+        &_name
+        {
+            font-size: .9em;
+            font-family: $font-headings;
+        }
+        &_position
+        {
+            font-size: .75em;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+    .testimonials
+    {
+        margin: 5em 0;
+        &__wrapper
+        {
+            flex-direction: row;
+        }
+    }
+}
