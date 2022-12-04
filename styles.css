@@ -24,7 +24,7 @@
 .testimonials__wrapper::before {
   content: "";
   position: absolute;
-  background-image: url("../images/bg-quotes.png");
+  background-image: url("./images/bg-quotes.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 3rem;
@@ -222,7 +222,7 @@
 .hero::before {
   content: "";
   position: absolute;
-  background-image: url("../images/bg-curvy-mobile.svg");
+  background-image: url("./images/bg-curvy-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -310,7 +310,7 @@
     font-size: 25px;
   }
   .hero::before {
-    background-image: url("../images/bg-curvy-desktop.svg");
+    background-image: url("./images/bg-curvy-desktop.svg");
   }
 }
 .header {
