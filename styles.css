@@ -165,6 +165,53 @@
     font-size: 25px;
   }
 }
+.features {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+.features__wrapper {
+  display: grid;
+  gap: 2.5em;
+}
+
+.feature__menu {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.feature__icon {
+  height: 5em;
+}
+.feature__heading {
+  font-family: "Raleway", "Arial";
+  font-weight: 700;
+}
+.feature__paragraph {
+  font-weight: 400;
+  color: hsl(0deg, 0%, 85%);
+  text-align: center;
+}
+
+@media screen and (min-width: 680px) {
+  .features__wrapper {
+    width: 100%;
+    align-content: space-around;
+    max-width: 50em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .features {
+    font-size: 22px;
+  }
+}
 body {
   background-color: hsl(218deg, 28%, 13%);
   color: white;

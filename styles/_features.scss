@@ -1,0 +1,64 @@
+.features
+{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper
+    {
+        display: grid;
+        gap: 2.5em;
+    }
+}
+.feature
+{
+    &__menu
+    {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    &__icon
+    {
+        height: 5em;
+    }
+    &__heading
+    {
+        font-family: $font-headings;
+        font-weight: 700;
+    }
+    &__paragraph
+    {
+        font-weight: 400;
+        color: $light-gray;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $md-bp)
+{
+    .features
+    {
+        &__wrapper
+        {
+            width: 100%;
+            align-content: space-around;
+            max-width: 50em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (min-width: $lg-bp)
+{
+    .features
+    {
+        font-size: 22px;
+    }
+}
