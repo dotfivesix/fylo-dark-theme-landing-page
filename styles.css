@@ -17,6 +17,8 @@
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  background-color: hsl(217deg, 23%, 16%);
 }
 .hero::before {
   content: "";
@@ -29,8 +31,7 @@
   height: 100%;
   bottom: -25%;
   left: 0;
-  z-index: -1;
-  filter: brightness(0.85);
+  z-index: 0;
 }
 .hero__wrapper {
   display: flex;
@@ -38,6 +39,8 @@
   align-items: center;
   justify-content: center;
   max-width: 32em;
+  position: relative;
+  z-index: 1;
 }
 .hero__image_container {
   display: flex;
@@ -89,16 +92,26 @@
   .hero {
     font-size: 25px;
   }
+  .hero::before {
+    background-image: url("../images/bg-curvy-desktop.svg");
+  }
 }
 .header {
   height: 6em;
   display: flex;
   align-items: center;
   padding: 2em 1.25em;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  background-color: hsl(217deg, 23%, 16%);
+}
+.header__wrapper {
   max-width: 1240px;
   margin: 0 auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 .header__logo_container {
   display: flex;

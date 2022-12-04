@@ -4,6 +4,8 @@
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    background-color: $hero-bg;
 
     &::before
     {
@@ -17,8 +19,7 @@
         height: 100%;
         bottom: -25%;
         left: 0;
-        z-index: -1;
-        filter: brightness(0.85);
+        z-index: 0;
     }
 
     &__wrapper
@@ -28,6 +29,8 @@
         align-items: center;
         justify-content: center;
         max-width: 32em;
+        position: relative;
+        z-index: 1;
     }
 
     &__image_container
@@ -91,6 +94,10 @@
 {
     .hero
     {
+        &::before
+        {
+            background-image: url("../images/bg-curvy-desktop.svg");
+        }
         font-size: 25px;
     }
 }

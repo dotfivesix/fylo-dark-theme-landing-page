@@ -4,10 +4,19 @@
     display: flex;
     align-items: center;
     padding: 2em 1.25em;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    max-width: $max-res;
-    margin: 0 auto;
+    background-color: $hero-bg;
+
+    &__wrapper
+    {
+        max-width: $max-res;
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     &__logo_container
     {
