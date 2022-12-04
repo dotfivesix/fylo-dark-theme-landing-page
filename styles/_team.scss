@@ -29,11 +29,21 @@
     {
         text-align: center;
         font-family: $font-headings;
+        &::selection
+        {
+            background-color: $blue;
+            color: black;
+        }
     }
     &__paragraph
     {
         color: $light-gray;
         line-height: 1.75;
+        &::selection
+        {
+            background-color: $cyan;
+            color: black;
+        }
     }
     &__ref
     {
@@ -64,7 +74,12 @@
         }
         &:hover
         {
-            filter: brightness(1.25);
+            filter: brightness(1.25)
+        }
+        & > span::selection
+        {
+            background-color: $cyan;
+            color: black;
         }
     }
 }

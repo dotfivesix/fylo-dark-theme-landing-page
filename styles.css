@@ -50,6 +50,14 @@
   color: hsl(0deg, 0%, 85%);
   line-height: 1.75;
 }
+.testimonial__quote::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.testimonial__quote::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
 .testimonial__profile {
   display: flex;
   gap: 1em;
@@ -68,9 +76,25 @@
   font-size: 0.9em;
   font-family: "Raleway", "Arial";
 }
+.testimonial__profile_name::-moz-selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
+.testimonial__profile_name::selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
 .testimonial__profile_position {
   font-size: 0.75em;
   font-weight: 400;
+}
+.testimonial__profile_position::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.testimonial__profile_position::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
 }
 
 @media screen and (min-width: 900px) {
@@ -107,9 +131,25 @@
   text-align: center;
   font-family: "Raleway", "Arial";
 }
+.team__heading::-moz-selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
+.team__heading::selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
 .team__paragraph {
   color: hsl(0deg, 0%, 85%);
   line-height: 1.75;
+}
+.team__paragraph::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.team__paragraph::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
 }
 .team__ref {
   display: flex;
@@ -139,6 +179,14 @@
 }
 .team__ref:hover {
   filter: brightness(1.25);
+}
+.team__ref > span::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.team__ref > span::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
 }
 
 @media screen and (min-width: 900px) {
@@ -208,10 +256,26 @@
   font-size: 1.75em;
   line-height: 1.75;
 }
+.hero__heading::-moz-selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
+.hero__heading::selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
 .hero__paragraph {
   text-align: center;
   color: hsl(0deg, 0%, 85%);
   line-height: 1.75;
+}
+.hero__paragraph::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.hero__paragraph::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
 }
 .hero__ref {
   display: flex;
@@ -350,11 +414,27 @@
   font-family: "Raleway", "Arial";
   margin: 1em 0;
 }
+.form__heading::-moz-selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
+.form__heading::selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
 .form__paragraph {
   line-height: 1.75;
   color: hsl(0deg, 0%, 85%);
   font-size: 0.9em;
   text-align: center;
+}
+.form__paragraph::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.form__paragraph::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
 }
 .form__field {
   margin: 1em;
@@ -384,6 +464,9 @@
 }
 .form__submit:hover {
   filter: brightness(1.25);
+}
+.form__submit:active {
+  filter: brightness(0.85);
 }
 
 @media screen and (min-width: 900px) {
@@ -435,6 +518,14 @@
   width: 1.25em;
   height: 1.25em;
 }
+.footer__address_text::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.footer__address_text::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
 .footer__contact {
   display: grid;
   gap: 1em;
@@ -447,6 +538,14 @@
   display: flex;
   gap: 1em;
   color: hsl(0deg, 0%, 85%);
+}
+.footer__contact_phone_number::-moz-selection, .footer__contact_email_number::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.footer__contact_phone_number::selection, .footer__contact_email_number::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
 }
 .footer__links {
   display: flex;
@@ -465,6 +564,14 @@
   text-decoration: none;
   position: relative;
   cursor: pointer;
+}
+.footer__link > a::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.footer__link > a::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
 }
 .footer__link > a::before {
   content: "";
@@ -562,11 +669,27 @@
   font-family: "Raleway", "Arial";
   font-weight: 700;
 }
+.feature__heading::-moz-selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
+.feature__heading::selection {
+  background-color: hsl(198deg, 60%, 50%);
+  color: black;
+}
 .feature__paragraph {
   font-weight: 400;
   color: hsl(0deg, 0%, 85%);
   text-align: center;
   line-height: 1.75;
+}
+.feature__paragraph::-moz-selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
+}
+.feature__paragraph::selection {
+  background-color: hsl(176deg, 68%, 64%);
+  color: black;
 }
 
 @media screen and (min-width: 680px) {

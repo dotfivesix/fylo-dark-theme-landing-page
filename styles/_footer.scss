@@ -38,6 +38,14 @@
             width: 1.25em;
             height: 1.25em;
         }
+        &_text
+        {
+            &::selection
+            {
+                background-color: $cyan;
+                color: black;
+            }
+        }
     }
     &__contact
     {
@@ -55,6 +63,14 @@
             gap: 1em;
             color: $light-gray;
         }
+        &_phone_number, &_email_number
+        {
+            &::selection
+            {
+                background-color: $cyan;
+                color: black;
+            }
+        }
     }
     &__links
     {
@@ -70,12 +86,18 @@
     &__link
     {
         list-style: none;
+        
         & > a
         {
             color: $light-gray;
             text-decoration: none;
             position: relative;
             cursor: pointer;
+            &::selection
+            {
+                background-color: $cyan;
+                color: black;
+            }
             &::before
             {
                 content: '';

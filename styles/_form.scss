@@ -34,6 +34,11 @@
         font-size: 1.25em;
         font-family: $font-headings;
         margin: 1em 0;
+        &::selection
+        {
+            background-color: $blue;
+            color: black;
+        }
     }
     &__paragraph
     {
@@ -41,6 +46,11 @@
         color: $light-gray;
         font-size: 0.9em;
         text-align: center;
+        &::selection
+        {
+            background-color: $cyan;
+            color: black;
+        }
     }
     &__field
     {
@@ -73,6 +83,10 @@
         &:hover
         {
             filter: brightness(1.25);
+        }
+        &:active
+        {
+            filter: brightness(0.85);
         }
     }
 }

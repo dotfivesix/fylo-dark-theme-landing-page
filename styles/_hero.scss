@@ -50,12 +50,22 @@
         margin-bottom: .75rem;
         font-size: 1.75em;
         line-height: 1.75;
+        &::selection
+        {
+            background-color: $blue;
+            color: black;
+        }
     }
     &__paragraph
     {
         text-align: center;
         color: $light-gray;
         line-height: 1.75;
+        &::selection
+        {
+            background-color: $cyan;
+            color: black;
+        }
     }
     &__ref
     {
