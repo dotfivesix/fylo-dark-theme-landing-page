@@ -1,7 +1,96 @@
 .hero
 {
+    padding: 2em 1.25em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::before
+    {
+        content: '';
+        position: absolute;
+        background-image: url("../images/bg-curvy-mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        bottom: -25%;
+        left: 0;
+        z-index: -1;
+        filter: brightness(0.85);
+    }
+
+    &__wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 32em;
+    }
+
+    &__image_container
+    {
+        display: flex;
+        justify-content: center;
+    }
     &__image
     {
-        width: 100%;
+        width: 80%;
+    }
+    &__heading
+    {
+        font-family: $font-headings;
+        text-align: center;
+        margin-top: 1.75rem;
+        margin-bottom: .75rem;
+        font-size: 1.75em;
+    }
+    &__paragraph
+    {
+        text-align: center;
+        color: $light-gray;
+    }
+    &__ref
+    {
+        display: flex;
+        justify-content: center;
+        margin: 1.5em auto;
+        padding: 1em;
+        background-image: linear-gradient(90deg, $cyan, $blue);
+        width: 15em;
+        border-radius: 2em;
+        text-decoration: none;
+        color: white;
+        font-family: $font-headings;
+        font-weight: 700;
+        filter: brightness(1);
+        @include animate;
+
+        &:hover
+        {
+            filter: brightness(1.15);
+        }
+        &:active
+        {
+            filter: brightness(0.85);
+        }
+    }
+}
+
+@media screen and (min-width: $md-bp)
+{
+    .hero
+    {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: $lg-bp)
+{
+    .hero
+    {
+        font-size: 25px;
     }
 }

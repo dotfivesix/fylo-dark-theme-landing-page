@@ -12,10 +12,84 @@
   width: 100%;
 }
 
-.hero__image {
+.hero {
+  padding: 2em 1.25em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
+  height: 100%;
+  bottom: -25%;
+  left: 0;
+  z-index: -1;
+  filter: brightness(0.85);
+}
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 32em;
+}
+.hero__image_container {
+  display: flex;
+  justify-content: center;
+}
+.hero__image {
+  width: 80%;
+}
+.hero__heading {
+  font-family: "Raleway", "Arial";
+  text-align: center;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.75em;
+}
+.hero__paragraph {
+  text-align: center;
+  color: hsl(0deg, 0%, 85%);
+}
+.hero__ref {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em auto;
+  padding: 1em;
+  background-image: linear-gradient(90deg, hsl(176deg, 68%, 64%), hsl(198deg, 60%, 50%));
+  width: 15em;
+  border-radius: 2em;
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", "Arial";
+  font-weight: 700;
+  filter: brightness(1);
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.hero__ref:hover {
+  filter: brightness(1.15);
+}
+.hero__ref:active {
+  filter: brightness(0.85);
 }
 
+@media screen and (min-width: 680px) {
+  .hero {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .hero {
+    font-size: 25px;
+  }
+}
 .header {
   height: 6em;
   display: flex;
@@ -68,6 +142,9 @@
   .header {
     font-size: 22px;
     padding: 2em 3em;
+  }
+  .header__links {
+    gap: 2em;
   }
 }
 @media screen and (min-width: 1080px) {

@@ -64,6 +64,11 @@
     {
         font-size: 22px;
         padding: 2em 3em;
+
+        &__links
+        {
+            gap: 2em;
+        }
     }
 
 }
