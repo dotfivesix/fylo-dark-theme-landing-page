@@ -36,6 +36,7 @@
 .testimonial {
   position: relative;
   z-index: 2;
+  border-radius: 0.25em;
   background-color: hsl(219deg, 30%, 18%);
   padding: 1.5em;
   list-style: none;
@@ -315,6 +316,90 @@
 @media screen and (min-width: 1080px) {
   .header {
     font-size: 25px;
+  }
+}
+.form {
+  position: relative;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+.form::before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-color: hsl(216deg, 53%, 9%);
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.form__wrapper {
+  background-color: hsl(217deg, 28%, 15%);
+  margin: 1.5em;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 28.75em;
+}
+.form__heading {
+  font-size: 1.25em;
+  font-family: "Raleway", "Arial";
+  margin: 1em 0;
+}
+.form__paragraph {
+  line-height: 1.75;
+  color: hsl(0deg, 0%, 85%);
+  font-size: 0.9em;
+  text-align: center;
+}
+.form__field {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+.form__input, .form__submit {
+  outline: none;
+  border: none;
+  padding: 1em 1.75em;
+  border-radius: 1.5em;
+  font-weight: 700;
+  font-family: "Raleway", "Arial";
+}
+.form__input {
+  color: hsl(216deg, 53%, 9%);
+}
+.form__submit {
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(90deg, hsl(176deg, 68%, 64%), hsl(198deg, 60%, 50%));
+  filter: brightness(1);
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.form__submit:hover {
+  filter: brightness(1.25);
+}
+
+@media screen and (min-width: 900px) {
+  .form__wrapper {
+    max-width: 50em;
+    padding: 2em 4em;
+  }
+  .form__field {
+    flex-direction: row;
+  }
+  .form__input {
+    flex: 3;
+  }
+  .form__heading {
+    font-size: 2em;
+    margin: 0 0 0.5em 0;
   }
 }
 .features {
