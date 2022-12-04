@@ -74,6 +74,11 @@
         font-size: 22px;
         padding: 2em 3em;
 
+        &__logo
+        {
+            width: 7.5em;
+        }
+
         &__links
         {
             gap: 2em;

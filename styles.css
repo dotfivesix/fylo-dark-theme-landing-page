@@ -373,6 +373,9 @@
     font-size: 22px;
     padding: 2em 3em;
   }
+  .header__logo {
+    width: 7.5em;
+  }
   .header__links {
     gap: 2em;
   }
